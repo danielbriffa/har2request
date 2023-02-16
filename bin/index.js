@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import fs from 'fs';
 import { resourceTypes } from './constants.js';
 import Fetch from './Fetch.js';
