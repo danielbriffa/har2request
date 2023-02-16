@@ -12,6 +12,7 @@
   "author": "Daniel Briffa (https://danielbriffa.com)",
   "type": "module",
   "license": "ISC",
+  "preferGlobal": true,
   "dependencies": {
     "yargs": "17.7.0"
   }
