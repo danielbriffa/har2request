@@ -1,6 +1,6 @@
 # har2request
 
-This node application lets you grab a .har file and convert the requests to beatiful vanilla JS code
+This node application lets you grab a .har file and convert the requests to beatiful vanilla JS code. Great if you want to extract the calls to reuse in a different app, for testing purposes,etc..
 
 ## Example output
 
@@ -39,7 +39,7 @@ fetch('https://danielbriffa.com/api', {
 
 ## Quick use
 
-`har2request --file=c:/code/onboarding2.har --output=c:/myFile.txt`
+`har2request --file=c:/har2fetch/myHarFile.har --output=c:/har2fetch/myFile.txt`
 
 ### Arguments
 
