@@ -1,6 +1,6 @@
 {
   "name": "har2request",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "bin/index.js",
   "bin": {
@@ -14,6 +14,7 @@
   "license": "ISC",
   "preferGlobal": true,
   "dependencies": {
+    "js-beautify": "^1.14.7",
     "yargs": "17.7.0"
   }
 }
