@@ -8,7 +8,12 @@ export default class Fetch {
   constructor({ url, method, headers, data, dataVar }) {
     this.url = url;
     this.method = method;
-    this.headers = headers;
+    this.headers = headers.reduce((arr, header) => {
+      return {
+        ...arr,
+        [header.name]: header.value
+      };
+    }, {});
     this.data = data;
     this.dataVar = dataVar;
   }
@@ -19,7 +24,7 @@ export default class Fetch {
     options.push(`headers: ${JSON.stringify(this.headers)}`);
 
     if (this.dataVar) {
-      options.push(`body: ${this.dataVar}`);
+      options.push(`body: JSON.stringify(${this.dataVar});`);
     } else if (this.data) {
       options.push(`body: ${JSON.stringify(this.data)}`);
     }
