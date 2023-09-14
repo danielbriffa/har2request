@@ -35,7 +35,7 @@ fetch('https://danielbriffa.com/api', {
 
 ## Install package globally
 
-`npm install -g danielbriffa/har2request`
+`npm install -g har2request`
 
 ## Quick use
 
